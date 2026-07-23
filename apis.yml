@@ -1,7 +1,25 @@
 aid: ample
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ample.png
 name: Ample
-description: Ample is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Ample Foods is a nutrition company that makes single-serving meal-replacement shakes
+  sold direct-to-consumer at amplemeal.com. Its lineup includes Ample Original, a low-carb meal
+  shake with roughly 25g protein and 4g net carbs per 400-calorie serving, and Ample Recover, a
+  higher-carb performance shake with about 31g protein and 33g carbs per 400-calorie serving, sold
+  in ready-to-drink bottles and bulk canisters. Ample is a consumer packaged-goods brand running on
+  a Shopify storefront; enrichment probing found no public developer API, OpenAPI specification, SDK,
+  developer portal, or API reference. This profile is a portfolio lead backed by 500 Global and is
+  retained as a company record with no API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/ample/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
+x-enrichment-last-run: '2026-07-17'
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Nutrition
+- Food and Beverage
+- Health
+- Meal Replacement
+- Consumer Packaged Goods
+- Ecommerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,14 @@ maintainers:
 common:
 - type: Website
   url: https://amplemeal.com
+- type: Blog
+  url: https://amplemeal.com/blogs/home
+- type: Support
+  url: https://amplemeal.zendesk.com/
+- type: Login
+  url: https://amplemeal.com/account/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
